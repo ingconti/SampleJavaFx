@@ -5,11 +5,12 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
+
+// some ideas from:
+// https://docs.oracle.com/javafx/2/get_started/hello_world.htm
 
 
 public class App extends Application {
@@ -29,6 +30,9 @@ public class App extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
+
+
+    // a stupid collection of drawing primitivea:
 
     private void drawShapes(GraphicsContext gc) {
         gc.setFill(Color.GREEN);

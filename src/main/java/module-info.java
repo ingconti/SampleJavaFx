@@ -1,4 +1,4 @@
-module org.openjfx {
+module org.example {
     requires javafx.controls;
-    exports org.openjfx;
+    exports org.example;
 }

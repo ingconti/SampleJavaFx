@@ -8,5 +8,5 @@ Updates:
 2) Use JDK min 15 for macOS if You see glitches on video using fonts.
 3) dded tests for Maven.
 
-_For now, NO shade support to get JAR.
-_
+For now, NO shade support to get JAR.
+

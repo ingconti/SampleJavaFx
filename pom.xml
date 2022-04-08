@@ -4,18 +4,32 @@
     <groupId>org.example</groupId>
     <artifactId>HelloFX_01</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>12</maven.compiler.source>
         <maven.compiler.target>12</maven.compiler.target>
     </properties>
+
     <dependencies>
+
+
+        <!-- junit 5 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>13</version>
         </dependency>
+
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -26,6 +40,13 @@
                     <release>11</release>
                 </configuration>
             </plugin>
+
+            <!-- added for Maven testing -->
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+            </plugin>
+
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -34,6 +55,8 @@
                     <mainClass>org.example.App</mainClass>
                 </configuration>
             </plugin>
+
+
         </plugins>
     </build>
 </project>

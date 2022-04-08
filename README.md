@@ -7,3 +7,7 @@ fixed for IntelliJ 2021 and later.
 
 Use JDK min 15 for macOS if You see glitches on video using fonts.
 
+Added tests form Maven.
+
+
+for now, NO shade support to get JAR.
